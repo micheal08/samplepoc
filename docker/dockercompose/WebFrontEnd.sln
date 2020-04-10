@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebFrontEnd", "WebFrontEnd\WebFrontEnd.csproj", "{05EEE514-5E93-427B-A878-97FD0EF7BBAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebAPI", "MyWebAPI\MyWebAPI.csproj", "{DDEFEAE4-22DC-481E-9C79-CDB1EC71FCF8}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C3967A6A-284F-4649-9C2A-E7A00266D612}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05EEE514-5E93-427B-A878-97FD0EF7BBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EEE514-5E93-427B-A878-97FD0EF7BBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EEE514-5E93-427B-A878-97FD0EF7BBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EEE514-5E93-427B-A878-97FD0EF7BBAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDEFEAE4-22DC-481E-9C79-CDB1EC71FCF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEFEAE4-22DC-481E-9C79-CDB1EC71FCF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEFEAE4-22DC-481E-9C79-CDB1EC71FCF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEFEAE4-22DC-481E-9C79-CDB1EC71FCF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3967A6A-284F-4649-9C2A-E7A00266D612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3967A6A-284F-4649-9C2A-E7A00266D612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3967A6A-284F-4649-9C2A-E7A00266D612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3967A6A-284F-4649-9C2A-E7A00266D612}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F6BA175-6AE8-435F-BD7D-598D162E2D23}
+	EndGlobalSection
+EndGlobal
