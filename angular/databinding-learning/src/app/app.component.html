@@ -1,0 +1,10 @@
+<div class="container">
+  <app-cookpit (serverCreated)="onServerCreated($event)" (bluePrintCreated)="onBlurPrintCreated($event)"></app-cookpit>
+  <hr>
+  <div class="row">
+    <div class="col-xl-12">
+      <app-server-element *ngFor="let item of serverElements"
+      [element] = "item"></app-server-element>
+    </div>
+  </div>
+</div>
