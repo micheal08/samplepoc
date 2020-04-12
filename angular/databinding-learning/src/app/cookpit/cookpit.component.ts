@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-cookpit',
@@ -8,24 +8,36 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class CookpitComponent implements OnInit {
 @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
 @Output() bluePrintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
-newServerName = '';
-newServerContent = '';
+// newServerName = '';
+// newServerContent = '';
+
+@ViewChild('serverContentInput') serverContentInput: ElementRef;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onServerAdded() {
+  onServerAdded(nameinput: HTMLInputElement) {
+    console.log(this.serverContentInput);
     this.serverCreated.emit({
-      serverName: this.newServerName,
-      serverContent: this.newServerContent
+      serverName: nameinput.value,
+      serverContent: this.serverContentInput.nativeElement.value
     });
+    // this.serverCreated.emit({
+    //   serverName: nameinput.value,
+    //   serverContent: this.newServerContent
+    // });
   }
 
-  onBluePrintClicked() {
+  onBluePrintClicked(nameinput: HTMLInputElement) {
     this.bluePrintCreated.emit({
-      serverName: this.newServerName,
-      serverContent: this.newServerContent
+      serverName: nameinput.value,
+      serverContent: this.serverContentInput.nativeElement.value
     });
+    // this.bluePrintCreated.emit({
+    //   serverName: nameinput.value,
+    //   serverContent: this.newServerContent
+    // });
   }
 }
