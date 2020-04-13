@@ -8,15 +8,7 @@
 <hr>
 <div class="row">
     <div class="col-xl-12">
-        <a href="#" class="list-group-item clearfix" *ngFor="let item of recipes">
-            <div class="float-left">
-                <h4>{{item.name}}</h4>
-                <p>{{item.description}}</p>
-            </div>
-            <span class="float-right">
-                <img [src]="item.imagepath" alt="{{item.name}}" class="img-fluid" style="max-height: 75px; max-width: 100%;">
-            </span>
-        </a>
-        <app-recipe-item></app-recipe-item>
+        <app-recipe-item *ngFor="let item of recipes" [recipe]="item" 
+        (recipeSelected)="onRecipeSelected(item)"></app-recipe-item>
     </div>
 </div>
