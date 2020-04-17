@@ -10,6 +10,8 @@ namespace WebFrontEnd.Pages
 {
     public class IndexModel : PageModel
     {
+        [ViewData]
+        public string Message { get; set; }
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -19,16 +21,19 @@ namespace WebFrontEnd.Pages
 
         public async void OnGet()
         {
-            ViewData["Message"] = "Hello from webfrontend";
+            var carApiUrl = Environment.GetEnvironmentVariable("MyApiUrl");
 
+            var responseData = string.Empty;
             using (var client = new System.Net.Http.HttpClient())
             {
                 // Call *mywebapi*, and display its response in the page
                 var request = new System.Net.Http.HttpRequestMessage();
-                request.RequestUri = new Uri("http://mywebapi/WeatherForecast"); // ASP.NET 3 (VS 2019 only)                
+                request.RequestUri = new Uri(carApiUrl + "api/WeatherForecast/GetWeather/3"); // ASP.NET 3 (VS 2019 only)                
                 var response = await client.SendAsync(request);
-                ViewData["Message"] += " and " + await response.Content.ReadAsStringAsync();
+                responseData = await response.Content.ReadAsStringAsync();
             }
+
+            Message = responseData;
         }
     }
 }

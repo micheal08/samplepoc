@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace MyWebAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -24,7 +24,7 @@ namespace MyWebAPI.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<WeatherForecast> GetWeatherForCast()
         {
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -35,5 +35,16 @@ namespace MyWebAPI.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("GetWeather/{index}")]
+        public string GetWeatherIndex(int index)
+        {
+            if (Summaries.Length - 1 >= index)
+                return Summaries[index];
+            else
+                return "No data found in specified index";
+        }
+
+
     }
 }
