@@ -1,0 +1,26 @@
+# refer https://blog.tonysneed.com/2019/10/13/enable-ssl-with-asp-net-core-using-nginx-and-docker/
+
+version: '3.4'
+services: 
+    reverseproxy:
+        restart: always
+        build: 
+            context: ./nginx
+            dockerfile: nginx.Dockerfile            
+        ports: 
+            - "3050:80"
+    api:        
+        image: simpleapi
+        build: 
+            context: ./services/SimpleAPI
+            dockerfile: simpleapi.Dockerfile
+        expose: 
+            - "5000"
+    client:
+        build:
+            context: ./client 
+            dockerfile: client.Dockerfile
+        expose: 
+            - "3000"
+        
+                       
