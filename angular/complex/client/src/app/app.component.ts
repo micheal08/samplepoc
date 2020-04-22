@@ -16,6 +16,8 @@ export class AppComponent {
   }
 
   onGetDataFromServer() {
-    this.apiService.getServerData();
+    this.apiService.getServerData().subscribe((data: string) => {
+      this.serverData = data;
+    });
   }
 }
