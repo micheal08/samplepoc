@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import {ApiService} from './apiservice.service';
+import { ApiService } from './apiservice.service';
+import { catchError } from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,15 +11,19 @@ import {ApiService} from './apiservice.service';
 export class AppComponent {
   title = 'client';
 
-  serverData = 'To get server data click Get button';
+  serverData: any;
+
 
   constructor(private apiService: ApiService) {
-
+    this.serverData = 'To get server data click Get button';
   }
 
   onGetDataFromServer() {
-    this.apiService.getServerData().subscribe((data: string) => {
-      this.serverData = data;
-    });
+    this.apiService.getServerData().subscribe(res  => {
+        console.log('Response - ' + res);
+        this.serverData = res;
+      }, error => {
+        console.error(error);
+      });
   }
 }

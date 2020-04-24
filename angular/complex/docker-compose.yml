@@ -3,24 +3,31 @@
 version: '3.4'
 services: 
     reverseproxy:
+        image: reverseproxy
         restart: always
         build: 
             context: ./nginx
             dockerfile: nginx.Dockerfile            
         ports: 
             - "3050:80"
-    api:        
-        image: simpleapi
+        depends_on:
+            - api
+            - client
+    api:
+        image: api
+        container_name: api
         build: 
             context: ./services/SimpleAPI
-            dockerfile: simpleapi.Dockerfile
+            dockerfile: simpleapi.Dockerfile   
         expose: 
-            - "5000"
+            - "5000"     
     client:
+        image: client
+        container_name: client
         build:
             context: ./client 
             dockerfile: client.Dockerfile
-        expose: 
-            - "3000"
+        
+        
         
                        
