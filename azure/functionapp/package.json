@@ -6,6 +6,10 @@
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
-  "dependencies": {},
+  "author": "Micheal Raj",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/storage-blob": "^12.1.1"
+  },
   "devDependencies": {}
 }
