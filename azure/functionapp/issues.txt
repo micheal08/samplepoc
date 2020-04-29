@@ -1,0 +1,6 @@
+Issue:1 
+    Value cannot be null.
+    Parameter name: provider
+Solution: 
+    https://github.com/Azure/azure-functions-core-tools/issues/1231
+
