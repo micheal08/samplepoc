@@ -26,7 +26,7 @@ module.exports = async function (context, req) {
     // Upload data to the blob
     const data = 'Hello, World!';
     const uploadBlobResponse = await blockBlobClient.upload(data, data.length);
-    console.log("Blob was uploaded successfully. requestId: ", uploadBlobResponse.requestId);
+    context.log("Blob was uploaded successfully. requestId: ", uploadBlobResponse.requestId);
 
     const name = (req.query.name || (req.body && req.body.name));
     const responseMessage = name
