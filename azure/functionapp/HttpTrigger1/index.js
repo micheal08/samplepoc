@@ -12,8 +12,11 @@ module.exports = async function (context, req) {
 
     const containerClient = await blobServiceClient.getContainerClient(containerName);
 
-    const createContainerResponse = await containerClient.create()
-    context.log("Container was created successfully. requestId: ", createContainerResponse.requestId);
+    if(!containerClient.exists())
+    {
+        const createContainerResponse = await containerClient.create();
+        context.log("Container was created successfully. requestId: ", createContainerResponse.requestId);
+    }
 
 
     const blobName = 'quickstart.txt';
@@ -26,6 +29,7 @@ module.exports = async function (context, req) {
     // Upload data to the blob
     const data = 'Hello, World!';
     const uploadBlobResponse = await blockBlobClient.upload(data, data.length);
+    
     context.log("Blob was uploaded successfully. requestId: ", uploadBlobResponse.requestId);
 
     const name = (req.query.name || (req.body && req.body.name));
