@@ -21,7 +21,5 @@ namespace leave_management.Data
         public DbSet<LeaveHistory> LeaveHistories { get; set; }
 
         public DbSet<LeaveAllocation> LeaveAllocations { get; set; }
-
-        public DbSet<leave_management.Models.LeaveTypeViewModel> DetailsLeaveTypeViewModel { get; set; }
     }
 }

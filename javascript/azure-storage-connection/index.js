@@ -109,6 +109,7 @@ const uploadFiles = async () => {
     const promises = [];
     for (const file of fileInput.files) {
       const blockBlobClient = containerClient.getBlockBlobClient(file.name);
+      blockBlobClient.exists
       promises.push(blockBlobClient.uploadBrowserData(file));
     }
     await Promise.all(promises);
