@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace leave_management.Models
 {
-    public class LeaveHistoryViewModel
+    public class LeaveRequestViewModel
     {
         public int Id { get; set; }
 
@@ -34,5 +34,14 @@ namespace leave_management.Models
         public EmployeeViewModel ApprovedBy { get; set; }
 
         public string ApprovedById { get; set; }
+    }
+
+    public class AdminLeaveRequestViewViewModel
+    {
+        public int TotalRequests { get; set; }
+        public int ApprovedRequests { get; set; }
+        public int PendingRequests { get; set; }
+        public int RejectedRequests { get; set; }
+        public List<LeaveRequestViewModel> LeaveRequests { get; set; }
     }
 }
