@@ -16,6 +16,7 @@ namespace leave_management.Repository
         {
             _db = dbContext;
         }
+
         public bool Create(LeaveRequest entity)
         {
             _db.LeaveRequests.Add(entity);
@@ -44,6 +45,13 @@ namespace leave_management.Repository
                 .Include(x => x.LeaveType)
                 .Include(x => x.ApprovedBy)
                 .FirstOrDefault(x => x.Id == id);
+        }
+
+        public ICollection<LeaveRequest> GetLeaveRequestByEmployee(string employeeid)
+        {
+            return FindAll()
+                .Where(x => x.RequestingEmployeeId == employeeid)
+                .ToList();
         }
 
         public bool isExists(int id)
