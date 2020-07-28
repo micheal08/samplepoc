@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\angular",
-    "\\angular\\morecomplex",
-    "\\angular\\morecomplex\\src\\WebApps"
+    "\\dotnetcore",
+    "\\dotnetcore\\bookstore"
   ],
-  "SelectedNode": "\\docker",
+  "SelectedNode": "\\dotnetcore\\bookstore\\src",
   "PreviewInSolutionExplorer": false
 }
