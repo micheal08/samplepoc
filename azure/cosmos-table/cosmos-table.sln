@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cosmos-table", "cosmos-table\cosmos-table.csproj", "{EC921F91-2272-4C71-AF69-B5386F0C8BEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC921F91-2272-4C71-AF69-B5386F0C8BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC921F91-2272-4C71-AF69-B5386F0C8BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC921F91-2272-4C71-AF69-B5386F0C8BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC921F91-2272-4C71-AF69-B5386F0C8BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30982D2B-1DC2-4852-8AED-48E58A4B9BDE}
+	EndGlobalSection
+EndGlobal

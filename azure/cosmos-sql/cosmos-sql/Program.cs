@@ -1,4 +1,6 @@
 ﻿using Microsoft.Azure.Cosmos;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -11,6 +13,7 @@ namespace cosmos_sql
         static string containername = "customer";
         static string endpoint = "https://democosmosmicheal.documents.azure.com:443/";
         static string accountkeys = "ApiMWET8h5V0dVY4AMikbUpWYbexnQi5VBMCvRlbk40dPiqEylKuEjMrlrDwtL16c3DQgXuvKPDogVZWh8KAVQ==";
+        static string cosmosDbConnectionString = "";
 
         static async Task Main(string[] args)
         {
@@ -19,9 +22,27 @@ namespace cosmos_sql
             //await ReadAndReplaceItem();
             //await DeleteItem();
             //await CreateNewItemWithEmbeddedData();
-            await CreateNewItemWithSp();
+            //await CreateNewItemWithSp();
+            await ReadItemFromDifferentRegion();
 
             Console.WriteLine("Hello World!");
+        }
+
+        private static async Task ReadItemFromDifferentRegion()
+        {
+            CosmosClient cosmos = new CosmosClient(cosmosDbConnectionString,
+                new CosmosClientOptions() { ApplicationRegion = Regions.WestEurope });
+
+            Database db = cosmos.GetDatabase(database);
+            Container cont = db.GetContainer(containername);
+
+            string id = "8024a2ec-6ca9-4c51-9427-2602dc8b8f30";
+
+            PartitionKey pk = new PartitionKey("New York");
+            ItemResponse<dynamic> response = await cont.ReadItemAsync<dynamic>(id, pk);
+            string outputString = JValue.Parse(response.Diagnostics.ToString()).ToString(Formatting.Indented);
+            Console.WriteLine(outputString);
+            Console.WriteLine("Operation Completed");
         }
 
         private static async Task CreateNewItemWithSp()
