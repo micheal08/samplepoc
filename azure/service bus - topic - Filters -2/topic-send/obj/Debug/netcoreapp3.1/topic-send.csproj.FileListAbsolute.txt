@@ -1,0 +1,102 @@
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\topic-send.exe
+C:\App\service bus - topic\topic-send\obj\Debug\netcoreapp3.1\topic-send.csprojAssemblyReference.cache
+C:\App\service bus - topic\topic-send\obj\Debug\netcoreapp3.1\topic-send.AssemblyInfoInputs.cache
+C:\App\service bus - topic\topic-send\obj\Debug\netcoreapp3.1\topic-send.AssemblyInfo.cs
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\topic-send.deps.json
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\topic-send.runtimeconfig.json
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\topic-send.runtimeconfig.dev.json
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\topic-send.dll
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\topic-send.pdb
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.Amqp.dll
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.ServiceBus.dll
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\App\service bus - topic\topic-send\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\App\service bus - topic\topic-send\obj\Debug\netcoreapp3.1\topic-send.csproj.CoreCompileInputs.cache
+C:\App\service bus - topic\topic-send\obj\Debug\netcoreapp3.1\topic-send.csproj.CopyComplete
+C:\App\service bus - topic\topic-send\obj\Debug\netcoreapp3.1\topic-send.dll
+C:\App\service bus - topic\topic-send\obj\Debug\netcoreapp3.1\topic-send.pdb
+C:\App\service bus - topic\topic-send\obj\Debug\netcoreapp3.1\topic-send.genruntimeconfig.cache
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\topic-send.exe
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\topic-send.deps.json
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\topic-send.runtimeconfig.json
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\topic-send.runtimeconfig.dev.json
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\topic-send.dll
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\topic-send.pdb
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.Amqp.dll
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.ServiceBus.dll
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\App\service bus - topic - Filters\topic-send\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\App\service bus - topic - Filters\topic-send\obj\Debug\netcoreapp3.1\topic-send.csprojAssemblyReference.cache
+C:\App\service bus - topic - Filters\topic-send\obj\Debug\netcoreapp3.1\topic-send.csproj.CoreCompileInputs.cache
+C:\App\service bus - topic - Filters\topic-send\obj\Debug\netcoreapp3.1\topic-send.AssemblyInfoInputs.cache
+C:\App\service bus - topic - Filters\topic-send\obj\Debug\netcoreapp3.1\topic-send.AssemblyInfo.cs
+C:\App\service bus - topic - Filters\topic-send\obj\Debug\netcoreapp3.1\topic-send.csproj.CopyComplete
+C:\App\service bus - topic - Filters\topic-send\obj\Debug\netcoreapp3.1\topic-send.dll
+C:\App\service bus - topic - Filters\topic-send\obj\Debug\netcoreapp3.1\topic-send.pdb
+C:\App\service bus - topic - Filters\topic-send\obj\Debug\netcoreapp3.1\topic-send.genruntimeconfig.cache
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.exe
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.deps.json
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.runtimeconfig.json
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.runtimeconfig.dev.json
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.pdb
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.Amqp.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.ServiceBus.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.csprojAssemblyReference.cache
+C:\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.AssemblyInfoInputs.cache
+C:\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.AssemblyInfo.cs
+C:\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.csproj.CopyComplete
+C:\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.dll
+C:\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.pdb
+C:\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.genruntimeconfig.cache
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.Management.ServiceBus.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
+C:\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.csproj.CoreCompileInputs.cache
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.exe
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.deps.json
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.runtimeconfig.json
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.runtimeconfig.dev.json
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\topic-send.pdb
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.Amqp.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.Management.ServiceBus.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.ServiceBus.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.csprojAssemblyReference.cache
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.csproj.CoreCompileInputs.cache
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.AssemblyInfoInputs.cache
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.AssemblyInfo.cs
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.csproj.CopyComplete
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.dll
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.pdb
+C:\Udemy\Azure\App\service bus - topic - Filters -2\topic-send\obj\Debug\netcoreapp3.1\topic-send.genruntimeconfig.cache
