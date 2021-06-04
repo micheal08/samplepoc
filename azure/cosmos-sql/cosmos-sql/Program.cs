@@ -11,8 +11,8 @@ namespace cosmos_sql
     {
         static string database = "appdb";
         static string containername = "customer";
-        static string endpoint = "https://democosmosmicheal.documents.azure.com:443/";
-        static string accountkeys = "ApiMWET8h5V0dVY4AMikbUpWYbexnQi5VBMCvRlbk40dPiqEylKuEjMrlrDwtL16c3DQgXuvKPDogVZWh8KAVQ==";
+        static string _endpointUri = "https://democosmosmicheal.documents.azure.com:443/";
+        static string _primaryKey = "ApiMWET8h5V0dVY4AMikbUpWYbexnQi5VBMCvRlbk40dPiqEylKuEjMrlrDwtL16c3DQgXuvKPDogVZWh8KAVQ==";
         static string cosmosDbConnectionString = "";
 
         static async Task Main(string[] args)
@@ -47,7 +47,7 @@ namespace cosmos_sql
 
         private static async Task CreateNewItemWithSp()
         {
-            using (CosmosClient cosmos = new CosmosClient(endpoint, accountkeys))
+            using (CosmosClient cosmos = new CosmosClient(_endpointUri, _primaryKey))
             {
                 Database db = cosmos.GetDatabase(database);
                 Container cont = db.GetContainer(containername);
@@ -67,7 +67,7 @@ namespace cosmos_sql
 
         private static async Task CreateNewItemWithEmbeddedData()
         {
-            using (CosmosClient cosmos = new CosmosClient(endpoint, accountkeys))
+            using (CosmosClient cosmos = new CosmosClient(_endpointUri, _primaryKey))
             {
                 Database db = cosmos.GetDatabase(database);
                 Container cont = db.GetContainer(containername);
@@ -90,7 +90,7 @@ namespace cosmos_sql
 
         private static async Task DeleteItem()
         {
-            using (CosmosClient cosmos = new CosmosClient(endpoint, accountkeys))
+            using (CosmosClient cosmos = new CosmosClient(_endpointUri, _primaryKey))
             {
                 Database db = cosmos.GetDatabase(database);
                 Container cont = db.GetContainer(containername);
@@ -98,7 +98,7 @@ namespace cosmos_sql
                 PartitionKey pk = new PartitionKey("New York");
                 string id = "8024a2ec-6ca9-4c51-9427-2602dc8b8f30";
 
-                ItemResponse<Customer> response = await cont.DeleteItemAsync<Customer>(id,pk);
+                ItemResponse<Customer> response = await cont.DeleteItemAsync<Customer>(id, pk);
 
                 Console.WriteLine("Request charge is {0}", response.RequestCharge);
                 Console.WriteLine("Item Deleted");
@@ -107,7 +107,7 @@ namespace cosmos_sql
 
         private static async Task ReadAndReplaceItem()
         {
-            using (CosmosClient cosmos = new CosmosClient(endpoint, accountkeys))
+            using (CosmosClient cosmos = new CosmosClient(_endpointUri, _primaryKey))
             {
                 Database db = cosmos.GetDatabase(database);
                 Container cont = db.GetContainer(containername);
@@ -128,7 +128,7 @@ namespace cosmos_sql
 
         private static async Task ReadItems()
         {
-            using (CosmosClient cosmos = new CosmosClient(endpoint, accountkeys))
+            using (CosmosClient cosmos = new CosmosClient(_endpointUri, _primaryKey))
             {
                 Database db = cosmos.GetDatabase(database);
                 Container cont = db.GetContainer(containername);
@@ -155,12 +155,12 @@ namespace cosmos_sql
 
         private static async Task CreateNewItem()
         {
-            using (CosmosClient cosmos = new CosmosClient(endpoint, accountkeys))
+            using (CosmosClient cosmos = new CosmosClient(_endpointUri, _primaryKey))
             {
                 Database db = cosmos.GetDatabase(database);
                 Container cont = db.GetContainer(containername);
 
-                Customer cust = new Customer { CustomerId = 2, CustomerName = "James", City = "Miami"};
+                Customer cust = new Customer { CustomerId = 2, CustomerName = "James", City = "Miami" };
                 cust.Id = Guid.NewGuid().ToString();
 
                 ItemResponse<Customer> response = await cont.CreateItemAsync(cust);
@@ -168,5 +168,35 @@ namespace cosmos_sql
                 Console.WriteLine("Customer Added");
             }
         }
+
+        private static async Task CreateDatabaseandContainer()
+        {
+            using (CosmosClient client = new CosmosClient(_endpointUri, _primaryKey))
+            {
+                DatabaseResponse databaseResponse = await client.CreateDatabaseIfNotExistsAsync("Products");
+                Database targetDatabase = databaseResponse.Database;
+                await Console.Out.WriteLineAsync($"Database Id:\t{targetDatabase.Id}");
+                IndexingPolicy indexingPolicy = new IndexingPolicy
+                {
+                    IndexingMode = IndexingMode.Consistent,
+                    Automatic = true,
+                    IncludedPaths =
+                    {
+                        new IncludedPath
+                        {
+                            Path = "/*"
+                        }
+                    }
+                };
+                var containerProperties = new ContainerProperties("Clothing", "/productId")
+                {
+                    IndexingPolicy = indexingPolicy
+                };
+                var containerResponse = await targetDatabase.CreateContainerIfNotExistsAsync(containerProperties, 10000);
+                var customContainer = containerResponse.Container;
+                await Console.Out.WriteLineAsync($"Custom Container Id:\t{customContainer.Id}");
+            }
+        }
+
     }
 }
